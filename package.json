@@ -79,7 +79,7 @@
     "test:cookies": "node scripts/verifyVersion 16 || tap test/cookie/*.js",
     "test:node-fetch": "node scripts/verifyVersion.js 16 || mocha --exit test/node-fetch",
     "test:fetch": "node scripts/verifyVersion.js 16 || (npm run build:node && tap --expose-gc test/fetch/*.js && tap test/webidl/*.js)",
-    "test:diagnostics-channel": "node scripts/verifyVersion.js 14 || node --test test/diagnostics-channel/*.js",
+    "test:diagnostics-channel": "node scripts/verifyVersion.js 14 || node test/diagnostics-channel/*.js",
     "test:jest": "node scripts/verifyVersion.js 14 || jest",
     "test:tap": "tap test/*.js",
     "test:tdd": "tap test/*.js -w",
